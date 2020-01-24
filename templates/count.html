@@ -1,0 +1,21 @@
+<html lang="en">
+
+    <body bgcolor="#BBF7E4" >
+
+<h1 style="color:#023424">  <font face="Arial" size="15px" >Hay {{ count }} palabras en tu texto </h1></font>
+ <p><font face="Arial" size="5px" style="color:#0c9167" > <b>Tu texto:</font></b></p>
+{{ fulltext }}
+
+<p><font face="Arial" size="5px" style="color:#46a788" > <b>Palabras:</font></b></p>
+
+{% for word, counttotal in sortedwords %}
+
+{{ word }} -- {{ counttotal }}
+
+<br />
+
+{% endfor %}
+
+
+
+</html>
